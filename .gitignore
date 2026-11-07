@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+.env*.local
+.DS_Store
+
+# Fichiers personnels à ne pas publier (photo d'origine avec métadonnées GPS, CV source, aperçus)
+/Portrait_*.jpg
+/CV_*.pdf
+/apercu-*.png
+/public/images/portrait-tresor-dsamago.jpg
