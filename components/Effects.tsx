@@ -172,6 +172,8 @@ export function Effects() {
           const r = h.getBoundingClientRect();
           const x = last.clientX - r.left;
           const y = last.clientY - r.top;
+          h.style.setProperty("--px", `${x.toFixed(0)}px`);
+          h.style.setProperty("--py", `${y.toFixed(0)}px`);
           const g1 = h.querySelector<HTMLElement>(".hero-glow.g1");
           const g2 = h.querySelector<HTMLElement>(".hero-glow.g2");
           if (g1) {

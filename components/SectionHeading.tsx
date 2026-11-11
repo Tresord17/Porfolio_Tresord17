@@ -4,6 +4,7 @@ import { rich } from "@/lib/rich";
 export function SectionHeading({ label, tag, title, lead }: { label: string; tag?: string; title: string; lead?: string }) {
   return (
     <header className="section-heading" data-reveal="">
+      {/^\d+$/.test(label) && <span className="heading-num" aria-hidden="true">{label}</span>}
       <p className="section-label">
         <span aria-hidden="true" data-scramble="">{tag ? `${label} / ${tag.toLowerCase()}` : `${label} /`}</span>
       </p>

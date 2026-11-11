@@ -54,6 +54,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       {/* ───────── HERO ───────── */}
       <section id="top" className="hero">
         <div className="hero-grid-bg" aria-hidden="true" />
+        <div className="hero-grid-lit" aria-hidden="true" />
         {/* Pluie de code (canevas, derrière le terminal) */}
         <CodeRain />
         <div className="hero-glow g1" aria-hidden="true" />
